@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="icon" href="favicon.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaQueries.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo.png" alt="logo image" />
+        </a>
+      </div>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html" id="active">Products</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="#">Kids & Baby</a></li>
+          <li><a href="#">Sale</a></li>
+        </ul>
+      </div>
+      <div class="nav-icons">
+        <a href="#"><i class="fa-solid fa-user"></i></a>
+        <a href="#"><i class="fa-solid fa-heart"></i></a>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+    </nav>
+    <section class="hero">
+      <img src="products_hero.jpg" alt="hero image" />
+    </section>
+    <section class="products">
+      <div class="product-grid">
+        <div id="item1" class="product-card">
+          <img src="blue polo.webp" alt="" />
+          <p class="product-name">Blue polo</p>
+          <p class="product-price">₹799</p>
+        </div>
+        <div id="item2" class="product-card">
+          <img src="black shirt.webp" alt="" />
+          <p class="product-name">Black Shirt</p>
+          <p class="product-price">₹999</p>
+        </div>
+        <div id="item3" class="product-card">
+          <img src="ralph denim.webp" alt="" />
+          <p class="product-name">Blue Denim</p>
+          <p class="product-price">₹1099</p>
+        </div>
+        <div class="product-card">
+          <img src="formal shirt.webp" alt="" />
+          <p class="product-name">Formal Shirt</p>
+          <p class="product-price">₹1199</p>
+        </div>
+        <div class="product-card">
+          <img src="hoodie.webp" alt="" />
+          <p class="product-name">Hoodie</p>
+          <p class="product-price">₹1799</p>
+        </div>
+        <div class="product-card">
+          <img src="Jacket.webp" alt="" />
+          <p class="product-name">Jacket</p>
+          <p class="product-price">₹3299</p>
+        </div>
+        <div class="product-card">
+          <img src="Floral Ruffle-Trim Georgette Dress.webp" alt="" />
+          <p class="product-name">Floral Ruffle-Trim Georgette Dress</p>
+          <p class="product-price">₹1999</p>
+        </div>
+        <div class="product-card">
+          <img src="Stretch Slim Fit Cotton Shirt.webp" alt="" />
+          <p class="product-name">Stretch Slim Fit Cotton Shirt</p>
+          <p class="product-price">₹999</p>
+        </div>
+        <div class="product-card">
+          <img src="Wool Crepe Buttoned Skirt.webp" alt="" />
+          <p class="product-name">Wool Crepe Buttoned Skirt</p>
+          <p class="product-price">₹899</p>
+        </div>
+        <div class="product-card">
+          <img src="Corduroy Wide-Leg Cropped Trouser.webp" alt="" />
+          <p class="product-name">Corduroy Wide-Leg Cropped Trouser</p>
+          <p class="product-price">₹1299</p>
+        </div>
+        <div class="product-card">
+          <img src="Polo Bear Cotton Crewneck Jumper.webp" alt="" />
+          <p class="product-name">Polo Bear Cotton Crewneck Jumper</p>
+          <p class="product-price">₹1499</p>
+        </div>
+        <div class="product-card">
+          <img src="Double-Faced Satin Midi Slip Dress.webp" alt="" />
+          <p class="product-name">Double-Faced Satin Midi Slip Dress</p>
+          <p class="product-price">₹2999</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <b>Company info</b>
+        <ul class="footer-list">
+          <li>About Us</li>
+          <li>Latest Posts</li>
+          <li>Contact Us</li>
+          <li>Shop</li>
+        </ul>
+      </div>
+      <div>
+        <b>Help Links</b>
+        <ul class="footer-list">
+          <li>Tracking</li>
+          <li>Order Status</li>
+          <li>Delivery</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+      <div>
+        <b>Useful Links</b>
+        <ul class="footer-list">
+          <li>Special Offers</li>
+          <li>Gift Cards</li>
+          <li>Advertising</li>
+          <li>Terms of Use</li>
+        </ul>
+      </div>
+      <div>
+        <b>Account</b>
+        <ul class="footer-list">
+          <li>My Account</li>
+          <li>Check Order</li>
+          <li>Manage Cookies</li>
+          <li>Settings</li>
+        </ul>
+      </div>
+    </footer>
+    <div id="copyright-div">
+      <hr />
+      <p id="copyright">© Copyright 2024 Ralph Lauren Media LLC</p>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/a1c18acd88.js"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    function changeColor() {
+      let hamburgerIcon = document.querySelector(".hamburger i");
+      let currentColor = window.getComputedStyle(hamburgerIcon).color;
+
+      if (currentColor === "rgb(0, 0, 0)") {
+        // black
+        hamburgerIcon.style.color = "white";
+      } else {
+        hamburgerIcon.style.color = "black";
+      }
+    }
+
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      changeColor(); // Call changeColor when the hamburger menu is clicked
+    });
+  </script>
+</html>

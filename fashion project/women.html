@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Women's Clothing</title>
+    <link rel="icon" href="favicon.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaQueries.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo.png" alt="logo image" />
+        </a>
+      </div>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html" id="active">Women</a></li>
+          <li><a href="#">Kids & Baby</a></li>
+          <li><a href="#">Sale</a></li>
+        </ul>
+      </div>
+      <div class="nav-icons">
+        <a href="#"><i class="fa-solid fa-user"></i></a>
+        <a href="#"><i class="fa-solid fa-heart"></i></a>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+    </nav>
+    <section class="hero">
+      <img src="women hero.jpg" alt="Women's Clothing Hero Image" />
+    </section>
+    <section class="products">
+      <div class="product-grid">
+        <div id="women-item1" class="product-card">
+          <img src="Double-Faced Satin Midi Slip Dress.webp" alt="Women's Dress" />
+          <p class="product-name">Women's Dress</p>
+          <p class="product-price">₹2999</p>
+        </div>
+        <div id="women-item2" class="product-card">
+          <img src="women skirt.jpg" alt="Women's Skirt" />
+          <p class="product-name">Women's Skirt</p>
+          <p class="product-price">₹899</p>
+        </div>
+        <div id="women-item3" class="product-card">
+          <img src="women shirt.jpeg" alt="Women's Shirt" />
+          <p class="product-name">Women's Shirt</p>
+          <p class="product-price">₹899</p>
+        </div>
+        <div id="women-item4" class="product-card">
+          <img src="women jacket.jpg" alt="Women's Jacket" />
+          <p class="product-name">Women's Jacket</p>
+          <p class="product-price">₹3099</p>
+        </div>
+        <div id="women-item5" class="product-card">
+          <img src="women jeans.webp" alt="Women's Jeans" />
+          <p class="product-name">Women's Jeans</p>
+          <p class="product-price">₹1299</p>
+        </div>
+        <div id="women-item6" class="product-card">
+          <img src="women sweater.jpg" alt="Women's Sweater" />
+          <p class="product-name">Women's Sweater</p>
+          <p class="product-price">₹1899</p>
+        </div>
+        <div id="women-item7" class="product-card">
+          <img src="women crop top.png" alt="Women's Crop Top" />
+          <p class="product-name">Women's Crop Top</p>
+          <p class="product-price">₹799</p>
+        </div>
+        <div id="women-item8" class="product-card">
+          <img src="women top.webp" alt="Women's Top" />
+          <p class="product-name">Women's Top</p>
+          <p class="product-price">₹899</p>
+        </div>
+        <div id="women-item9" class="product-card">
+          <img src="women shorts.webp" alt="Women's Shorts" />
+          <p class="product-name">Women's Shorts</p>
+          <p class="product-price">₹599</p>
+        </div>
+        <div id="women-item10" class="product-card">
+          <img src="women kurti.jpg" alt="Women's Kurti" />
+          <p class="product-name">Women's Kurti</p>
+          <p class="product-price">₹1099</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <b>Company Info</b>
+        <ul class="footer-list">
+          <li>About Us</li>
+          <li>Latest Posts</li>
+          <li>Contact Us</li>
+          <li>Shop</li>
+        </ul>
+      </div>
+      <div>
+        <b>Help Links</b>
+        <ul class="footer-list">
+          <li>Tracking</li>
+          <li>Order Status</li>
+          <li>Delivery</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+      <div>
+        <b>Useful Links</b>
+        <ul class="footer-list">
+          <li>Special Offers</li>
+          <li>Gift Cards</li>
+          <li>Advertising</li>
+          <li>Terms of Use</li>
+        </ul>
+      </div>
+      <div>
+        <b>Account</b>
+        <ul class="footer-list">
+          <li>My Account</li>
+          <li>Check Order</li>
+          <li>Manage Cookies</li>
+          <li>Settings</li>
+        </ul>
+      </div>
+    </footer>
+    <div id="copyright-div">
+      <hr />
+      <p id="copyright">© Copyright 2024 Ralph Lauren Media LLC</p>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/a1c18acd88.js"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    function changeColor() {
+      let hamburgerIcon = document.querySelector(".hamburger i");
+      let currentColor = window.getComputedStyle(hamburgerIcon).color;
+
+      if (currentColor === "rgb(0, 0, 0)") {
+        hamburgerIcon.style.color = "white";
+      } else {
+        hamburgerIcon.style.color = "black";
+      }
+    }
+
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      changeColor();
+    });
+  </script>
+</html>
